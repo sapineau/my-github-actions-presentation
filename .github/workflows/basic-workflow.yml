@@ -50,6 +50,3 @@ jobs:
           echo "Hello ${{ github.event.inputs.name }}" 
           echo "Your favorite city is ${{ github.event.inputs.city }}"
           echo "Is your favorite color blue: ${{ github.event.inputs.fav-color-blue }}"
-
-      - name: dad-joke
-        uses: mickeygoussetorg/get-a-dad-joke@v1
