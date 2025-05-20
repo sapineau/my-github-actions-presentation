@@ -51,5 +51,8 @@ jobs:
           echo "Your favorite city is ${{ github.event.inputs.city }}"
           echo "Is your favorite color blue: ${{ github.event.inputs.fav-color-blue }}"
 
-      - name: dad-joke
+      - id: dad-joke
         uses: mickeygoussetorg/get-a-dad-joke@v1
+        
+      - name: Output Dad Joke
+        run: echo "${{ steps.dad-joke.outputs.dad-joke }}"
